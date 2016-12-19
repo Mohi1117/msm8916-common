@@ -335,7 +335,8 @@ service msm_irqbalance /system/bin/msm_irqbalance -f /system/vendor/etc/msm_irqb
     group root
     writepid /dev/cpuset/system-background/tasks
 
-service netmgrd /system/bin/netmgrd
+service netmgrd /system/bin/sh /system/etc/netmgrd_control.sh
+    seclabel u:r:netmgrd:s0
     class main
 
 on property:ro.use_data_netmgrd=false
