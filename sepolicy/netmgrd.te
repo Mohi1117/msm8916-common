@@ -1,6 +1,5 @@
 allow netmgrd self:capability { kill dac_override };
 allow netmgrd self:packet_socket { write bind create read };
-allow netmgrd diag_prop:property_service set;
 allow netmgrd shell_exec:file entrypoint;
 allow netmgrd netmgrd_exec:file execute_no_trans;
 allow netmgrd domain:dir { search open read getattr };
