@@ -17,10 +17,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.use_data_netmgrd=true \
     ro.sys.sdcardfs=true
 
-# Data switch hack
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/netmgrd_control.sh:system/etc/netmgrd_control.sh
-
 # RIL
 PRODUCT_PACKAGES += \
     libcnefeatureconfig \
