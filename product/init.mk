@@ -5,5 +5,4 @@ PRODUCT_PACKAGES += \
     init.qcom.power.rc \
     init.qcom.ssr.rc \
     init.recovery.qcom.rc \
-    ueventd.qcom.rc \
-    netmgrd_control.sh
+    ueventd.qcom.rc
